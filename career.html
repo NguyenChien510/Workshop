@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="taskbar">
+            <ul>
+                <li class="menu-icon">
+                    <i class='bx bx-menu'></i>
+                    <div class="nav">
+                        <ul>
+                            <li class="logo">
+                                <img src="img/logo.jpg" alt="" class="logo-team">
+                                <h4>CODELORE</h4>
+                            </li>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="#">Trắc nghiệm</a></li>
+                            <li><a href="jobs.html">Nghề nghiệp</a></li>
+                            <li><a href="tuyensinh.html">Tuyển sinh</a></li>
+                            <li><a href="team.html">Giới thiệu</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-logo">
+            <!-- <i class='bx bxl-codepen'></i> -->
+             <img src="img/logo.jpg" alt="">
+            <h4>CODELORE</h4>
+        </div>
+        <div class="account">
+            <img src="img/logo.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="career-slide">
+        <img src="img/tntc.jpg" alt="" class="img">
+
+        <div class="slide">
+            <div class="note">
+                <p>Các ý liệt kê trong mỗi bảng hướng đến các tố chất và năng lực cá nhân của bạn. Với mỗi ý sẽ có nhiều mức độ phù hợp với bạn, tương ứng với mỗi mức độ phù hợp, sẽ được quy định một điểm số tương ứng. Điểm số tương ứng này do bạn đánh giá và tự điền vào bảng theo thang đo sau.
+                </p>
+                <ol>
+                    <li>1. Bạn thấy ý đó chưa bao giờ đúng với bạn – cho 1 điểm</li>
+                    <li>2. Chỉ thấy ý đó chỉ đúng trong một vài trường hợp – cho 2 điểm</li>
+                    <li>3. Bạn thấy ý đó chỉ một nửa là đúng với bạn – cho 3 điểm</li>
+                    <li>4. Bạn thấy ý đó gần như là đúng với bạn trong hầu hết mọi trường hợp, chỉ có một vài trường hợp là chưa đúng lắm – cho 4 điểm</li>
+                    <li>5. Bạn thấy ý đó là hoàn toàn đúng với bạn, không thể nào khác đi được – cho 5 điểm
+                    </li>
+                </ol>
+            </div>
+<form id="testForm">
+            <div class="mutiple-choice">
+                <h2>TRẮC NGHIỆM</h2>
+                <div class="question">
+                    <p>1. Tôi thích làm việc với công cụ, máy móc hoặc thiết bị</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question1" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question1" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question1" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question1" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question1" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>2. Tôi thích tham gia các hoạt động ngoài trời như xây dựng hoặc sửa chữa.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question2" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question2" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question2" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question2" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question2" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>3. Tôi thấy hứng thú với việc sửa chữa hoặc lắp ráp các thiết bị.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question3" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question3" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question3" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question3" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question3" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>4. Tôi thích làm việc với các vật liệu như gỗ, kim loại, hoặc máy móc.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question4" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question4" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question4" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question4" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question4" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>5. Tôi thích giải quyết các vấn đề phức tạp hoặc thử thách về kỹ thuật.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question5" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question5" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question5" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question5" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question5" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>6. Tôi đam mê học hỏi các khái niệm mới và khám phá cách mọi thứ hoạt động.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question6" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question6" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question6" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question6" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question6" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>7. Tôi thường phân tích dữ liệu hoặc nghiên cứu trước khi đưa ra quyết định.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question7" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question7" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question7" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question7" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question7" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>8. Tôi thích thực hiện các thí nghiệm khoa học hoặc tìm hiểu sâu về các lĩnh vực chuyên môn.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question8" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question8" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question8" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question8" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question8" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>9. Tôi thích sáng tạo ra những thứ mới, như viết, vẽ hoặc thiết kế.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question9" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question9" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question9" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question9" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question9" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>10. Tôi thích tham gia các hoạt động nghệ thuật như âm nhạc, hội họa, hoặc diễn xuất.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question10" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question10" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question10" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question10" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question10" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>11. Tôi thường nghĩ ra những ý tưởng độc đáo và thể hiện chúng qua sáng tạo cá nhân.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question11" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question11" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question11" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question11" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question11" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>12. Tôi không thích các quy tắc cứng nhắc, mà thích tự do sáng tạo và thể hiện bản thân.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question12" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question12" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question12" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question12" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question12" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>13. Tôi thích giúp đỡ người khác hoặc làm việc với các nhóm người..</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question13" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question13" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question13" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question13" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question13" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>14. Tôi cảm thấy hứng thú khi tư vấn, đào tạo hoặc chia sẻ kiến thức với người khác.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question14" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question14" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question14" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question14" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question14" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>15. Tôi thích giao tiếp và xây dựng mối quan hệ với những người xung quanh.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question15" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question15" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question15" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question15" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question15" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>16. Tôi cảm thấy có ý nghĩa khi tham gia các hoạt động vì cộng đồng hoặc xã hội.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question16" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question16" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question16" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question16" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question16" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>17. Tôi thích lãnh đạo, điều hành hoặc thuyết phục người khác làm việc chung.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question17" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question17" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question17" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question17" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question17" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>18. Tôi tự tin tham gia vào các cuộc đàm phán hoặc thương lượng.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question18" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question18" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question18" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question18" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question18" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>19. Tôi hứng thú với việc tổ chức hoặc lập kế hoạch để đạt được mục tiêu cụ thể.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question19" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question19" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question19" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question19" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question19" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>20. Tôi có tham vọng và luôn tìm kiếm cơ hội để khởi nghiệp hoặc phát triển sự nghiệp.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question20" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question20" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question20" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question20" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question20" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>21. Tôi thích làm việc với số liệu, dữ liệu, và thông tin có cấu trúc rõ ràng.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question21" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question21" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question21" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question21" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question21" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>22. Tôi cảm thấy thoải mái khi tuân thủ các quy trình và quy tắc đã được xác định trước.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question22" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question22" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question22" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question22" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question22" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>23. Tôi thích sắp xếp, quản lý hồ sơ, hoặc thực hiện các nhiệm vụ văn phòng.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question23" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question23" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question23" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question23" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question23" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="question">
+                    <p>24. Tôi ưu tiên các công việc mang tính tổ chức, chính xác và ổn định.</p>
+                    <div class="answer">
+                        <label>
+                            <input type="radio" name="question24" value="1">
+                            <span>1</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question24" value="2">
+                            <span>2</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question24" value="3">
+                            <span>3</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question24" value="4">
+                            <span>4</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="question24" value="5">
+                            <span>5</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="submit-ans">
+                    <input type="submit"  onclick="calculateTotalPoints(event)" style="cursor: pointer;">
+                    <input type="reset" id="resetbtn" value="Reset" style="margin: 10px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div id="result"></div>
+
+    <!-- Popup -->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <p id="popupMessage"></p>
+        <button onclick="closePopup()">Đóng</button>
+    </div>
+
+    
+
+
+    <!-- footer -->
+    <div class="contact">
+        <div class="contact-info">
+            <img src="https://huongnghiep.com.vn/wp-content/uploads/2024/09/logo-huongnghiep-300x90.jpg" alt="">
+            <p>Chuyên trang Định Hướng Nghề Nghiệp Online hỗ <br>
+                 trợ học sinh, sinh viên khám phá đam mê, lựa <br>
+                  chọn ngành nghề phù hợp, và phát triển sự <br>
+                   nghiệp bền vững.    </p>
+        </div>
+
+        <div class="contact-address">
+            <div class="name-contact">
+                <div class="nav-logo">
+                    <img src="img/logo.jpg" alt="">
+                </div>
+                <h2>CODELORE</h2>
+            </div>
+            <p><span>Hotline</span>: 0000000000</p>
+            <p><span>Địa chỉ</span>: 54 Nguyễn Lương Bằng,<br> Liên Chiểu, Đà Nẵng</p>
+            <p><span>Mail</span>: lethanhchung1107@gmail.com</p>
+        </div>
+
+        <div class="contact-internet">
+            <h3>Đăng ký nhận thông tin ưu đãi</h3>
+            <div class="mail-submit">
+                <input type="text" class="input" name="mail" placeholder="Nhập email của bạn">
+                <input type="submit" class="submit">
+            </div>
+
+            <div class="icon">
+                <a href="https://www.facebook.com/profile.php?id=100015680597102" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="https://github.com/ThanhChung1107" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.tiktok.com/" target="_blank"><i class='bx bxl-tiktok'></i></a>
+                <a href="https://www.instagram.com/_chugle/" target="_blank"><i class='bx bxl-instagram'></i></a>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>

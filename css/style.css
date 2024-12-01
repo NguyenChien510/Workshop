@@ -1,0 +1,675 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Đặt vị trí cố định */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #f0e6e6;
+    z-index: 1000;
+}
+
+#header .sign{
+    display: flex;
+}
+#header .sign a {
+    padding: 8px 16px;
+    border: 2px solid #000;
+    border-radius: 14px;
+    margin: 0 16px;
+    font-weight: 550;
+}
+.sign a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#header .nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+.nav-logo img,.logo-team {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.nav-logo h4 {
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(151, 113, 7);
+}
+.taskbar .menu-icon {
+    top: 0;
+    width: 62px;
+}
+.taskbar .menu-icon .bx{
+    font-size: 30px;
+    padding: 16px;
+    background-color: #000;
+    color: #fff;
+}
+
+.taskbar .nav {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(210, 236, 228);
+    padding: 20px;
+    opacity: 0; /* Ban đầu menu trong suốt */
+    transform: translateX(-20px); /* Đẩy menu sang trái một chút */
+    visibility: hidden; /* Ẩn menu để tránh bị click khi chưa hiển thị */
+    transition: all 0.4s ease; /* Hiệu ứng mượt mà */
+}
+
+.nav a,.nav li {
+    padding: 20px 0;
+    font-weight: 700;
+    transition: font-size 0.1s ease;
+}
+.menu-icon:hover .nav {
+    opacity: 1; /* Hiển thị menu */
+    transform: translateX(0); /* Đưa menu về đúng vị trí */
+    visibility: visible;
+}
+.nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+}
+.logo h4 {
+    padding-left: 10px;
+}
+.bxl-codepen {
+    border-radius: 50%;
+
+}
+
+.nav a:hover {
+    color: red;
+    font-size: 18px;
+}
+
+
+/* slide */
+#slide {
+    background: url(https://huongnghiep.com.vn/wp-content/uploads/2024/09/chon-nghe.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#slide .slide-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid #fff;
+    border-radius: 14px;
+}
+
+.slide-box h1{
+    margin-bottom: 12px ;
+    color: rgb(18, 142, 190);
+}
+.slide-box .search {
+    margin: 20px 0 10px;
+    width: 100%;
+    text-align: center;
+}
+.search input {
+    width: 70%;
+    font-weight: 600;
+}
+.search button, .search input {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.search button {
+    background-color: orange;
+}
+
+.search .bx {
+    font-size: 16px;
+}
+
+.search button:hover {
+    background-color: orangered;
+}
+
+.industry {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    width: 80%;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+.industry a {
+    flex-shrink: 0;
+    padding: 20px 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    white-space: nowrap;
+    color: rgb(3, 46, 126);
+    font-weight: 700;
+}
+.industry a:hover {
+    background: linear-gradient(to right, orange,orangered);
+}
+.industry::-webkit-scrollbar {
+    width: 50%;
+    height: 8px; /* Đặt chiều cao thanh cuộn ngang */
+}
+
+.industry::-webkit-scrollbar-track {
+    background: #eee;
+    padding: 0 50px;
+}
+
+.industry::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.industry::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.contact {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to right,rgb(85, 78, 78),rgb(74, 74, 133));
+    color: #c9bcbc;
+}
+
+.contact .contact-info {
+    margin-top: 20px;
+}
+
+.contact .contact-info p {
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.contact .contact-address {
+    margin-top: 20px;
+}
+.contact-address .name-contact {
+    display: flex;
+    font-size: 24px;
+    color: rgb(255, 60, 0);
+    margin-bottom: 24px;
+}
+.name-contact .bx {
+    margin:10px 10px 0 0;
+    color: rgb(9, 165, 9);
+}
+
+.contact-address p {
+    margin: 10px;
+    font-size: 18px;
+}
+
+.contact-address span {
+    font-weight: 600;
+    color: #fff;
+}
+
+.contact-internet {
+    margin: auto 0;
+}
+
+.contact-internet h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.contact-internet input {
+    font-size: 16px;
+    padding: 8px 16px ;
+    border-radius: 8px;
+    border: none;
+}
+.contact-internet .submit {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgb(18, 32, 110),rgb(79, 146, 223));
+    color: #fff;
+}
+.submit:hover {
+    color: #000;
+}
+
+.contact-internet .icon {
+
+    margin: 20px 0;
+    font-size: 30px;
+}
+.icon .bx {
+    position: relative;
+    padding: 0 18px;
+}
+.icon a {
+    color: #c9bcbc;
+}
+.icon .bx:hover {
+    color: #fff;
+}
+
+.bxl-facebook-circle:hover::after, 
+.bxl-tiktok:hover::after,
+ .bxl-github:hover::after, 
+ .bxl-instagram:hover::after{
+    position: absolute;
+    bottom: 100%; /* Hiển thị phía trên icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 20px;
+    padding: 10px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s;
+}
+
+.bxl-facebook-circle:hover::after {
+    content: "Theo dõi chúng tôi trên Facebook!";
+}
+.bxl-tiktok:hover::after {
+    content: "Theo dõi chúng tôi trên tiktok";
+}
+.bxl-github:hover::after{
+    content: "Xem source code tại github";
+}
+.bxl-instagram:hover::after {
+    content: "Theo dõi chúng tôi trên instagram";
+    left: 0;
+}
+
+.map img{
+    background: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* carerr.html */
+.account img{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 1px solid orange;
+}
+.career-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+.career-slide .img {
+    width: 80%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 70px ;
+    border-radius: 20px;
+    
+}
+.career-slide .slide {
+    width: 80%;
+    height: 100%;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+.career-slide .slide .info {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.info input {
+    width: 40%;
+    margin-bottom: 26px;
+}
+.info h2 {
+    margin: 20px auto;
+    color: #9b4a08
+}
+.info .input-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.input-info label {
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.input-info input {
+    font-size: 18px;
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.career-slide .note {
+    margin: 20px 50px;
+    padding: 20px;
+    background-color: rgb(238, 194, 111);
+    border-radius: 20px;
+    color: rgb(124, 40, 9);
+    font-weight: 600;
+    position: relative;
+}
+.note p {
+    padding-bottom: 16px;
+}
+
+.mutiple-choice h2 {
+    margin: 20px auto;
+}
+.mutiple-choice .question{
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+    margin: 0 0 20px 20px;
+    font-size: 20px;
+    width: 90%;
+    border: 1px solid orange;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 70px;
+}
+.question{
+    position: absolute;
+}
+.question p {
+    margin-right: 150px;
+    min-width: 600px;
+}
+.question .answer {
+    position: absolute;
+    right: 0;
+    bottom: 15%;
+    display: flex;
+    flex-direction: inline-block;
+}
+.answer input[type="radio"] {
+    display: none;
+}
+.answer label {
+    margin: 0 10px;
+}
+.answer span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid orange;
+    border-radius: 4px;
+    background-color: #c9c2c2;
+    cursor: pointer;
+}
+
+.answer input[type="radio"]:checked + span {
+    background-color: greenyellow;
+}
+
+.submit-ans {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit-ans input {
+    margin: 20px 0;
+    padding: 8px 16px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: greenyellow;
+}
+.submit-ans input:hover {
+    background-color: orangered;
+    color: #fff;
+}
+
+
+ /* nghề nghiệp  */
+ 
+ .jobs-main {
+    margin: 70px auto;
+    width: 80%;
+    height: auto;
+    background-color: rgb(231, 232, 230);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ .jobs-main h2 {
+    margin: 30px auto;
+    color: #9b4a08;
+ }
+ .job {
+    display: flex;
+    flex-direction: column;
+ }
+.job a {
+    font-size: 16px;font-weight: 600;
+    margin: 20px 0 0 30px;
+}
+.job a:hover {
+    color: red;
+}
+ .jobs-main .jobs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    margin-bottom: 40px;
+ }
+ .jobs img {
+    width: 250px;
+    height: 200px;
+    border-radius: 8px;
+ }
+ .jobs-main h3 {
+    margin: 20px auto 40px;
+    padding: 8px 16px;
+    background: linear-gradient(to right, yellowgreen,green);
+    border-radius: 8px;
+ }
+ .jobs-main h3:hover {
+    background: linear-gradient(to right, orange, red);
+ }
+
+ .job-slider {
+    width: 100%;
+    height: auto;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+ .job-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    padding: 50px 0;
+    width: 90%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 16px;
+ }
+ .job-title h1 {
+    font-size: 40px;
+    margin-right: 100px;
+    font-weight: 1000;
+ }
+
+ .job-title img {
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+ }
+
+ .job-content {
+    margin: 30px 30px;
+ }
+ .job-content h2 {
+    margin: 14px 0;
+    font-weight: 800;
+ }
+ .job-content span {
+    font-weight: bold;
+ }
+ .job-content p {
+    line-height: 1.4;
+    font-size: 18px;
+    margin-right: 100px;
+ }
+ #TKVM {
+    background-color: rgb(206, 234, 163);
+ }
+ #TDH {
+    background-color: rgb(227, 211, 182);
+ }
+ #CDT {
+    background-color: rgb(200, 200, 239);
+ }
+ #CND {
+    background-color: rgb(244, 205, 205);
+ }
+ #DTVT {
+    background-color: rgb(255, 255, 203);
+ }
+
+ .mutiple-choice h2 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.popup button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.popup button:hover {
+    background: #0056b3;
+}
+.overlay /* Lớp phủ mờ background*/
+{    
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+
+#resetbtn {
+    background-color: #f44336; /* Màu nền đỏ */
+    color: #fff;             /* Màu chữ trắng */
+    border: none;            /* Xóa viền */
+    padding: 10px 20px;      /* Khoảng cách bên trong */
+    border-radius: 5px;      /* Bo tròn các góc */
+    font-size: 16px;         /* Kích thước chữ */
+    cursor: pointer;         /* Con trỏ chuột dạng tay khi hover */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu */
+}
+
+#resetbtn:hover {
+    background-color: #d32f2f; /* Màu nền khi hover */
+}
+.message {
+    color: red;
+    font-weight: bold;
+}
