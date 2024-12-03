@@ -515,3 +515,10 @@ button:hover {
 .univer h3:hover {
     color: #0441ec;
 }
+.diemchuan {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
